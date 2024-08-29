@@ -1,10 +1,20 @@
 @import url('paleta-color.css');
 :root {
   /* Colores base */
+  --primary-color: var(--azul-500);
+  --secondary-color: var(--morado-500);
+  --default-color: var(--gris-100);
+  --success-color: var(--verde-500);
+  --warning-color: var(--amarillo-500);
+  --danger-color: var(--rojo-500);
 
   /* Colores de layout */
+  --background1-color: white;
+  --background2-color: var(--gris-50);
+  --divider-color: var(--gris-300);
 
   /* Colores de texto */
-
-  /* Colores de fondo */
+  --text-primary-color: var(--gris-900);
+  --text-secondary-color: var(--gris-700);
+  --text-tertiary-color: var(--gris-500);
 }

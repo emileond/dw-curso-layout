@@ -1,0 +1,6 @@
+@import url('../variables/color.css');
+
+body {
+  color: var(--text-primary-color);
+  font-size: 16px;
+}
