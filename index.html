@@ -5,16 +5,16 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <main>
-      <section>
+    <main class="contenedor">
+      <section class="contenedor–login">
         <nav>
-          <div>LOGO</div>
+          <img src="img/logo.png" alt="logo" />
         </nav>
-        <div>
+        <div class="form-contenedor">
           <h1>Iniciar Sesión</h1>
-          <div>
-            <button>G</button>
-            <button>Apple</button>
+          <div class="form-contenedor-social-btn">
+            <button class="boton-social">G</button>
+            <button class="boton-social">Apple</button>
           </div>
           <form>
             <h4>Inicia con tu correo</h4>
@@ -25,14 +25,16 @@
             <label for="password">Contraseña</label>
             <input id="password" type="password" placeholder="Contraseña" />
 
-            <p>Olvidaste tu contraseña?</p>
+            <p id="texto-contrasena-olvidada">Olvidaste tu contraseña?</p>
 
-            <button>Iniciar Sesión</button>
-            <a href="#">Aun no tienes cuenta? Regístrate</a>
+            <div class="form-contenedor-acciones">
+              <button class="buton--primary">Iniciar Sesión</button>
+              <a href="#">Aun no tienes cuenta? Regístrate</a>
+            </div>
           </form>
         </div>
       </section>
-      <section>img</section>
+      <section class="grafico">img</section>
     </main>
   </body>
 </html>

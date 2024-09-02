@@ -4,3 +4,92 @@ body {
   color: var(--text-primary-color);
   font-size: 16px;
 }
+
+.contenedor {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.contenedor–login {
+  width: 100%;
+}
+
+.grafico {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.form-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  width: 400px;
+
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.form-contenedor-social-btn {
+  display: flex;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.boton-social {
+  width: 100%;
+  color: var(--primary-color);
+  background-color: var(--default-color);
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+form label {
+  display: none;
+}
+
+form input {
+  width: 100%;
+  background-color: var(--default-color);
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+}
+
+#texto-contrasena-olvidada {
+  color: var(--text-secondary-color);
+  margin-bottom: 48px;
+}
+
+.form-contenedor-acciones {
+  width: 100%;
+  text-align: center;
+}
+
+.buton--primary {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+}
+
+nav img {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+}
