@@ -7,12 +7,10 @@
 nav {
   flex-basis: 264px;
   flex-shrink: 0;
-  background-color: chocolate;
 }
 
 main {
   flex-grow: 1;
-  background-color: aliceblue;
 }
 
 .appbar {
