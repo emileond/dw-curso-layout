@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/paginas/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/paginas/login.css" />
+    <link rel="stylesheet" href="css/componentes/boton.css" />
+    <link rel="stylesheet" href="css/componentes/input.css" />
+    <title>Appy - Login</title>
   </head>
   <body>
     <main class="contenedor">
@@ -13,8 +26,12 @@
         <div class="form-contenedor">
           <h1>Iniciar Sesión</h1>
           <div class="form-contenedor-social-btn">
-            <button class="boton-social">G</button>
-            <button class="boton-social">Apple</button>
+            <button class="button--secondary">
+              <i class="bx bxl-google"></i>
+            </button>
+            <button class="button--secondary">
+              <i class="bx bxl-apple"></i>
+            </button>
           </div>
           <form>
             <h4>Inicia con tu correo</h4>
@@ -28,13 +45,13 @@
             <p id="texto-contrasena-olvidada">Olvidaste tu contraseña?</p>
 
             <div class="form-contenedor-acciones">
-              <button class="buton--primary">Iniciar Sesión</button>
+              <button class="button--primary">Iniciar Sesión</button>
               <a href="#">Aun no tienes cuenta? Regístrate</a>
             </div>
           </form>
         </div>
       </section>
-      <section class="grafico">img</section>
+      <section class="grafico"></section>
     </main>
   </body>
 </html>

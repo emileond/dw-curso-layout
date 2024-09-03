@@ -17,4 +17,13 @@
   --text-primary-color: var(--gris-900);
   --text-secondary-color: var(--gris-700);
   --text-tertiary-color: var(--gris-500);
+
+  /* Estados de boton */
+  --button-primary-hover: var(--azul-600);
+  --button-primary-pressed: var(--azul-500);
+
+  --button-secondary-hover: var(--gris-50);
+  --button-secondary-pressed: var(--gris-200);
+
+  --input-pressed: var(--gris-200);
 }

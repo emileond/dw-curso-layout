@@ -1,0 +1,15 @@
+input {
+  width: 100%;
+  background-color: var(--default-color);
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+
+  &:hover {
+    background-color: var(--background2-color);
+  }
+
+  &:active {
+    background-color: var(--input-pressed);
+  }
+}

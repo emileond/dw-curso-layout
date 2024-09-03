@@ -1,0 +1,28 @@
+@import url('../variables/color.css');
+
+.contenedor {
+  display: flex;
+}
+
+nav {
+  flex-basis: 264px;
+  flex-shrink: 0;
+  background-color: chocolate;
+}
+
+main {
+  flex-grow: 1;
+  background-color: aliceblue;
+}
+
+.appbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
