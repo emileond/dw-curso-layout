@@ -24,3 +24,90 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.contenedor-grid {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  grid-template-areas:
+    'tarjetas   tarjetas  tarjetas'
+    'grafico    grafico   productos'
+    'tabla      tabla     tabla';
+}
+
+.grid-item--tarjetas {
+  grid-area: tarjetas;
+}
+.grid-item--grafico {
+  grid-area: grafico;
+}
+
+.grid-item--productos {
+  grid-area: productos;
+}
+
+.grid-item--tabla {
+  grid-area: tabla;
+}
+
+.contenedor-grid--tarjetas {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.tarjeta {
+  border: 1px solid var(--divider-color);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  i {
+    color: var(--primary-color);
+    font-size: 24px;
+    padding: 12px;
+    max-width: 48px;
+    background-color: var(--default-color);
+    border-radius: 100%;
+  }
+}
+
+.etiqueta-porcentaje {
+  padding: 4px 6px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.etiqueta-porcentaje--positivo {
+  background-color: var(--success-color);
+}
+
+.etiqueta-porcentaje--negativo {
+  background-color: var(--danger-color);
+}
+
+@media (max-width: 600px) {
+  .contenedor-grid {
+    grid-template-areas:
+      'tarjetas   tarjetas  tarjetas'
+      'grafico    grafico   grafico'
+      'productos  productos productos'
+      'tabla      tabla     tabla';
+  }
+
+  .contenedor-grid--tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .contenedor-grid {
+    grid-template-areas:
+      'tarjetas   tarjetas  tarjetas'
+      'grafico    grafico   grafico'
+      'productos  productos productos'
+      'tabla      tabla     tabla';
+  }
+}
