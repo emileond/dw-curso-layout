@@ -18,8 +18,42 @@
   </head>
   <body>
     <div class="contenedor">
-      <nav>MENU</nav>
-      <main>
+      <nav>
+        <img alt="logo" src="img/logo.png" />
+        <ul>
+          <div>
+            <li>
+              <i class="bx bx-home-alt-2"></i>
+              Inicio
+            </li>
+            <li>
+              <i class="bx bx-group"></i>
+              Clientes
+            </li>
+            <li>
+              <i class="bx bx-briefcase"></i>
+              Proyectos
+            </li>
+            <li>
+              <i class="bx bx-cog"></i>
+              Facturas
+            </li>
+            <li>
+              <i class="bx bx-box"></i>
+              Productos
+            </li>
+            <li>
+              <i class="bx bx-envelope"></i>
+              Mensajes
+            </li>
+          </div>
+          <li>
+            <i class="bx bx-log-out"></i>
+            Cerrar sesión
+          </li>
+        </ul>
+      </nav>
+      <div class="contenedor--derecha">
         <div class="appbar">
           <input />
           <div>
@@ -28,61 +62,213 @@
             <i class="bx bxs-user-circle"></i>
           </div>
         </div>
-        <div class="encabezado">
-          <div>
-            <h1>Bienvenido</h1>
-            <p>Esta es tu página de inicio</p>
-          </div>
+        <main>
+          <div class="encabezado">
+            <div>
+              <h1>Bienvenido</h1>
+              <p>Esta es tu página de inicio</p>
+            </div>
 
-          <button>Este mes</button>
-        </div>
-        <div class="contenedor-grid">
-          <div class="grid-item--tarjetas contenedor-grid--tarjetas">
-            <div class="tarjeta">
-              <i class="bx bx-money"></i>
-              <div>
-                <span class="body2"> Ingresos </span>
-                <h3>$29,435.00</h3>
+            <button class="button--outlined">
+              <i class="bx bx-calendar"></i>
+              Este mes
+              <i class="bx bx-chevron-down"></i>
+            </button>
+          </div>
+          <div class="contenedor-grid">
+            <div class="grid-item--tarjetas contenedor-grid--tarjetas">
+              <div class="tarjeta">
+                <i class="bx bx-money tarjeta--icono"></i>
+                <div>
+                  <span class="body2"> Ingresos </span>
+                  <h3>$29,435.00</h3>
+                </div>
+                <div class="body2">
+                  <span
+                    class="etiqueta-porcentaje etiqueta-porcentaje--positivo"
+                  >
+                    +0.32%
+                  </span>
+                  <span> Periodo pasado </span>
+                </div>
               </div>
-              <div class="body2">
-                <span class="etiqueta-porcentaje etiqueta-porcentaje--positivo">
-                  +0.32%
-                </span>
-                <span> Periodo pasado </span>
+              <div class="tarjeta">
+                <i class="bx bx-wallet tarjeta--icono"></i>
+                <div>
+                  <span class="body2"> Ventas Totales </span>
+                  <h3>1,239</h3>
+                </div>
+                <div class="body2">
+                  <span
+                    class="etiqueta-porcentaje etiqueta-porcentaje--positivo"
+                  >
+                    +4.32%
+                  </span>
+                  <span> Periodo pasado </span>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <i class="bx bx-user-plus tarjeta--icono"></i>
+                <div>
+                  <span class="body2"> Clientes Nuevos </span>
+                  <h3>938</h3>
+                </div>
+                <div class="body2">
+                  <span
+                    class="etiqueta-porcentaje etiqueta-porcentaje--negativo"
+                  >
+                    -0.4%
+                  </span>
+                  <span> Periodo pasado </span>
+                </div>
               </div>
             </div>
-            <div class="tarjeta">
-              <i class="bx bx-wallet"></i>
-              <div>
-                <span class="body2"> Ventas Totales </span>
-                <h3>1,239</h3>
+            <div class="grid-item--grafico tarjeta">grafico</div>
+            <div class="grid-item--productos tarjeta">
+              <div class="tarjeta--titulo">
+                <h4>Mas Vendidos</h4>
+                <button class="button--outlined">
+                  Ver todos
+                  <i class="bx bx-chevron-right"></i>
+                </button>
               </div>
-              <div class="body2">
-                <span class="etiqueta-porcentaje etiqueta-porcentaje--positivo">
-                  +4.32%
-                </span>
-                <span> Periodo pasado </span>
-              </div>
+              <ul class="lista-productos">
+                <li>
+                  <div class="producto-detalle">
+                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <div class="producto-titulo">
+                      <span>Producto 1</span>
+                      <span class="body2">128 Ventas</span>
+                    </div>
+                  </div>
+                  <span> $9,249.00 </span>
+                </li>
+                <li>
+                  <div class="producto-detalle">
+                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <div class="producto-titulo">
+                      <span>Producto 1</span>
+                      <span class="body2">128 Ventas</span>
+                    </div>
+                  </div>
+                  <span> $9,249.00 </span>
+                </li>
+                <li>
+                  <div class="producto-detalle">
+                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <div class="producto-titulo">
+                      <span>Producto 1</span>
+                      <span class="body2">128 Ventas</span>
+                    </div>
+                  </div>
+                  <span> $9,249.00 </span>
+                </li>
+                <li>
+                  <div class="producto-detalle">
+                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <div class="producto-titulo">
+                      <span>Producto 1</span>
+                      <span class="body2">128 Ventas</span>
+                    </div>
+                  </div>
+                  <span> $9,249.00 </span>
+                </li>
+                <li>
+                  <div class="producto-detalle">
+                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <div class="producto-titulo">
+                      <span>Producto 1</span>
+                      <span class="body2">128 Ventas</span>
+                    </div>
+                  </div>
+                  <span> $9,249.00 </span>
+                </li>
+              </ul>
             </div>
-            <div class="tarjeta">
-              <i class="bx bx-user-plus"></i>
-              <div>
-                <span class="body2"> Clientes Nuevos </span>
-                <h3>938</h3>
+            <div class="grid-item--tabla tarjeta">
+              <div class="tarjeta--titulo">
+                <div>
+                  <h4>Últimas Ventas</h4>
+                  <p class="body2">
+                    Listado detallado de las transacciones recientes
+                  </p>
+                </div>
+                <button class="button--outlined">
+                  Ver todos
+                  <i class="bx bx-chevron-right"></i>
+                </button>
               </div>
-              <div class="body2">
-                <span class="etiqueta-porcentaje etiqueta-porcentaje--negativo">
-                  -0.4%
-                </span>
-                <span> Periodo pasado </span>
+              <div class="ventas-flex">
+                <div class="ventas-flex--header body2">
+                  <span class="ventas-flex--num"> # </span>
+                  <span class="ventas-flex--prod"> producto </span>
+                  <span class="ventas-flex--id"> ID </span>
+                  <span class="ventas-flex--fecha"> fecha </span>
+                  <span class="ventas-flex--pago"> pago </span>
+                  <span class="ventas-flex--cliente">Cliente</span>
+                  <span class="ventas-flex--importe">Importe</span>
+                </div>
+                <div class="ventas-flex--row body2">
+                  <span class="ventas-flex--num">1</span>
+                  <span class="ventas-flex--prod">Producto 1</span>
+                  <span class="ventas-flex--id">#PR-28473</span>
+                  <span class="ventas-flex--fecha">05/12/2024</span>
+                  <span class="ventas-flex--pago">TDC **23</span>
+                  <span class="ventas-flex--cliente">Marco Sanchez</span>
+                  <span class="ventas-flex--importe">$129.00</span>
+                </div>
+                <div class="ventas-flex--row body2">
+                  <span class="ventas-flex--num">1</span>
+                  <span class="ventas-flex--prod">Producto 1</span>
+                  <span class="ventas-flex--id">#PR-28473</span>
+                  <span class="ventas-flex--fecha">05/12/2024</span>
+                  <span class="ventas-flex--pago">TDC **23</span>
+                  <span class="ventas-flex--cliente">Marco Sanchez</span>
+                  <span class="ventas-flex--importe">$129.00</span>
+                </div>
+                <div class="ventas-flex--row body2">
+                  <span class="ventas-flex--num">1</span>
+                  <span class="ventas-flex--prod">Producto 1</span>
+                  <span class="ventas-flex--id">#PR-28473</span>
+                  <span class="ventas-flex--fecha">05/12/2024</span>
+                  <span class="ventas-flex--pago">TDC **23</span>
+                  <span class="ventas-flex--cliente">Marco Sanchez</span>
+                  <span class="ventas-flex--importe">$129.00</span>
+                </div>
+                <div class="ventas-flex--row body2">
+                  <span class="ventas-flex--num">1</span>
+                  <span class="ventas-flex--prod">Producto 1</span>
+                  <span class="ventas-flex--id">#PR-28473</span>
+                  <span class="ventas-flex--fecha">05/12/2024</span>
+                  <span class="ventas-flex--pago">TDC **23</span>
+                  <span class="ventas-flex--cliente">Marco Sanchez</span>
+                  <span class="ventas-flex--importe">$129.00</span>
+                </div>
+                <div class="ventas-flex--row body2">
+                  <span class="ventas-flex--num">1</span>
+                  <span class="ventas-flex--prod">Producto 1</span>
+                  <span class="ventas-flex--id">#PR-28473</span>
+                  <span class="ventas-flex--fecha">05/12/2024</span>
+                  <span class="ventas-flex--pago">TDC **23</span>
+                  <span class="ventas-flex--cliente">Marco Sanchez</span>
+                  <span class="ventas-flex--importe">$129.00</span>
+                </div>
+                <div class="ventas-flex--footer">
+                  <span class="body2"> 5/10 </span>
+                  <div class="paginacion--botones">
+                    <button class="button--outlined"><</button>
+                    <button class="button--outlined">1</button>
+                    <button class="button--outlined">2</button>
+                    <button class="button--outlined">...</button>
+                    <button class="button--outlined">4</button>
+                    <button class="button--outlined">></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="grid-item--grafico tarjeta">grafico</div>
-          <div class="grid-item--productos tarjeta">productos</div>
-          <div class="grid-item--tabla tarjeta">tabla</div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   </body>
 </html>

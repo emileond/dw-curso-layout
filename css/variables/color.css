@@ -26,4 +26,8 @@
   --button-secondary-pressed: var(--gris-200);
 
   --input-pressed: var(--gris-200);
+
+  /* Estados de nav items */
+  --nav-item--hover: var(--azul-50);
+  --nav-item--active: var(--azul-600);
 }
