@@ -60,6 +60,10 @@ form label {
 .form-contenedor-acciones {
   width: 100%;
   text-align: center;
+
+  button {
+    margin-bottom: 16px;
+  }
 }
 
 nav img {

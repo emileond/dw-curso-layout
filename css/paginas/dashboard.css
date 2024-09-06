@@ -1,69 +1,8 @@
 @import url('../variables/color.css');
 
-.contenedor {
-  display: flex;
-}
-
-.contenedor--derecha {
-  flex-grow: 1;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  flex-basis: 264px;
-  flex-shrink: 0;
-  padding: 0 8px;
-
-  ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background-color: white;
-      color: var(--text-secondary-color);
-      font-size: 14px;
-      border-radius: 8px;
-      margin-bottom: 8px;
-
-      &:hover {
-        cursor: pointer;
-        background-color: var(--nav-item--hover);
-      }
-
-      &:active {
-        background-color: var(--nav-item--active);
-        color: white;
-      }
-
-      .bx {
-        font-size: 24px;
-      }
-    }
-  }
-}
-
 main {
   background-color: var(--background2-color);
   padding: 24px;
-}
-
-.appbar {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .encabezado {
@@ -88,6 +27,11 @@ main {
 }
 .grid-item--grafico {
   grid-area: grafico;
+}
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: var(--primary-color) !important;
 }
 
 .grid-item--productos {
@@ -136,11 +80,13 @@ main {
 }
 
 .etiqueta-porcentaje--positivo {
-  background-color: var(--success-color);
+  background-color: var(--etiqueta-positivo-bg);
+  color: var(--success-color);
 }
 
 .etiqueta-porcentaje--negativo {
-  background-color: var(--danger-color);
+  background-color: var(--etiqueta-negativo-bg);
+  color: var(--danger-color);
 }
 
 .lista-productos {
@@ -178,43 +124,26 @@ main {
   overflow-x: auto;
 }
 
-.ventas-flex--header {
+.ventas-flex--header,
+.ventas-flex--row {
   display: flex;
   justify-content: start;
   background-color: var(--background2-color);
   border-bottom: 1px solid var(--divider-color);
   padding: 16px 24px;
-}
-.ventas-flex--num {
-  min-width: 40px;
-  flex-grow: 0;
-}
-.ventas-flex--prod {
-  min-width: 120px;
-  flex-grow: 1;
-}
-.ventas-flex--id {
-  min-width: 120px;
-}
-.ventas-flex--fecha {
-  min-width: 120px;
-}
-.ventas-flex--pago {
-  min-width: 120px;
-}
-.ventas-flex--cliente {
-  min-width: 160px;
-  flex-grow: 1;
-}
-.ventas-flex--importe {
-  min-width: 120px;
+  gap: 24px;
+  min-width: 500px;
 }
 
 .ventas-flex--row {
-  display: flex;
-  justify-content: start;
-  border-bottom: 1px solid var(--divider-color);
+  background-color: white;
   padding: 32px 24px;
+}
+
+.ventas-flex--header span,
+.ventas-flex--row span {
+  flex-basis: 120px;
+  flex-grow: 1;
 }
 
 .ventas-flex--footer {
@@ -251,5 +180,62 @@ main {
     background: white;
     position: fixed;
     top: -900px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #checkbox-menu:blank ~ nav {
+    opacity: 0;
+    display: none;
+
+    img {
+      display: none;
+    }
+  }
+
+  #checkbox-menu:checked ~ nav {
+    opacity: 1;
+    top: 85px;
+    padding: 16px;
+    height: calc(100vh - 85px);
+
+    img {
+      display: none;
+    }
+  }
+
+  .appbar {
+    .logo {
+      width: 95px;
+      height: 31px;
+      display: block;
+    }
+  }
+
+  #contenedor-input {
+    input {
+      display: none;
+    }
+  }
+  .appbar--botones {
+    .bx-cog,
+    .bx-bell {
+      display: none;
+    }
+
+    .bx-menu {
+      font-size: 40px;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contenedor-grid {
+    grid-template-areas:
+      'tarjetas   tarjetas  tarjetas'
+      'grafico    grafico   grafico'
+      'productos  productos productos'
+      'tabla      tabla     tabla';
   }
 }

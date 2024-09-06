@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appy - Mensajes</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/componentes/layout.css" />
+    <link rel="stylesheet" href="css/componentes/input.css" />
+    <link rel="stylesheet" href="css/paginas/mensajes.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <input type="checkbox" id="checkbox-menu" />
+      <nav>
+        <img alt="logo" src="img/logo.png" />
+        <ul>
+          <div>
+            <li>
+              <i class="bx bx-home-alt-2"></i>
+              Inicio
+            </li>
+            <li>
+              <i class="bx bx-group"></i>
+              Clientes
+            </li>
+            <li>
+              <i class="bx bx-briefcase"></i>
+              Proyectos
+            </li>
+            <li>
+              <i class="bx bx-cog"></i>
+              Facturas
+            </li>
+            <li>
+              <i class="bx bx-box"></i>
+              Productos
+            </li>
+            <li>
+              <i class="bx bx-envelope"></i>
+              Mensajes
+            </li>
+          </div>
+          <li id="cerrar-sesion">
+            <i class="bx bx-log-out"></i>
+            Cerrar sesión
+          </li>
+        </ul>
+      </nav>
+      <div class="contenedor--derecha">
+        <div class="appbar">
+          <img class="logo" alt="logo" src="img/logo.png" />
+          <div id="contenedor-input">
+            <input placeholder="Buscar" />
+          </div>
+          <div class="appbar--botones">
+            <i class="bx bx-cog"></i>
+            <i class="bx bx-bell"></i>
+            <div id="divider"></div>
+            <img alt="avatar" src="img/avatar.png" />
+            <label for="checkbox-menu">
+              <i class="bx bx-menu"></i>
+            </label>
+          </div>
+        </div>
+        <!-- aqui empieza la practica -->
+        <div class="contenedor--mensajes">
+          <div class="mensajes--item">MENSAJES</div>
+          <div class="chat--item">CHAT</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

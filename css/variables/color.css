@@ -30,4 +30,10 @@
   /* Estados de nav items */
   --nav-item--hover: var(--azul-50);
   --nav-item--active: var(--azul-600);
+  --nav-item--red-hover: var(--rojo-50);
+  --nav-item--red-active: var(--rojo-600);
+
+  /* Colores etiquetas  */
+  --etiqueta-positivo-bg: var(--verde-50);
+  --etiqueta-negativo-bg: var(--rojo-50);
 }

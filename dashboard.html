@@ -14,10 +14,19 @@
     />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="css/paginas/dashboard.css" />
+    <link rel="stylesheet" href="css/componentes/layout.css" />
     <link rel="stylesheet" href="css/componentes/boton.css" />
+    <link rel="stylesheet" href="css/componentes/input.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   </head>
   <body>
     <div class="contenedor">
+      <input type="checkbox" id="checkbox-menu" />
       <nav>
         <img alt="logo" src="img/logo.png" />
         <ul>
@@ -47,7 +56,7 @@
               Mensajes
             </li>
           </div>
-          <li>
+          <li id="cerrar-sesion">
             <i class="bx bx-log-out"></i>
             Cerrar sesión
           </li>
@@ -55,11 +64,18 @@
       </nav>
       <div class="contenedor--derecha">
         <div class="appbar">
-          <input />
-          <div>
+          <img class="logo" alt="logo" src="img/logo.png" />
+          <div id="contenedor-input">
+            <input placeholder="Buscar" />
+          </div>
+          <div class="appbar--botones">
             <i class="bx bx-cog"></i>
             <i class="bx bx-bell"></i>
-            <i class="bx bxs-user-circle"></i>
+            <div id="divider"></div>
+            <img alt="avatar" src="img/avatar.png" />
+            <label for="checkbox-menu">
+              <i class="bx bx-menu"></i>
+            </label>
           </div>
         </div>
         <main>
@@ -123,7 +139,9 @@
                 </div>
               </div>
             </div>
-            <div class="grid-item--grafico tarjeta">grafico</div>
+            <div class="grid-item--grafico tarjeta">
+              <div class="ct-chart ct-minor-seventh"></div>
+            </div>
             <div class="grid-item--productos tarjeta">
               <div class="tarjeta--titulo">
                 <h4>Mas Vendidos</h4>
@@ -145,7 +163,7 @@
                 </li>
                 <li>
                   <div class="producto-detalle">
-                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <img alt="icono producto" src="img/icono-producto-2.png" />
                     <div class="producto-titulo">
                       <span>Producto 1</span>
                       <span class="body2">128 Ventas</span>
@@ -155,7 +173,7 @@
                 </li>
                 <li>
                   <div class="producto-detalle">
-                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <img alt="icono producto" src="img/icono-producto-3.png" />
                     <div class="producto-titulo">
                       <span>Producto 1</span>
                       <span class="body2">128 Ventas</span>
@@ -165,7 +183,7 @@
                 </li>
                 <li>
                   <div class="producto-detalle">
-                    <img alt="icono producto" src="img/icono-producto-1.png" />
+                    <img alt="icono producto" src="img/icono-producto-4.png" />
                     <div class="producto-titulo">
                       <span>Producto 1</span>
                       <span class="body2">128 Ventas</span>
@@ -200,64 +218,66 @@
               </div>
               <div class="ventas-flex">
                 <div class="ventas-flex--header body2">
-                  <span class="ventas-flex--num"> # </span>
-                  <span class="ventas-flex--prod"> producto </span>
-                  <span class="ventas-flex--id"> ID </span>
-                  <span class="ventas-flex--fecha"> fecha </span>
-                  <span class="ventas-flex--pago"> pago </span>
-                  <span class="ventas-flex--cliente">Cliente</span>
-                  <span class="ventas-flex--importe">Importe</span>
+                  <span> # </span>
+                  <span> producto </span>
+                  <span> ID </span>
+                  <span> fecha </span>
+                  <span> pago </span>
+                  <span>Cliente</span>
+                  <span>Importe</span>
                 </div>
                 <div class="ventas-flex--row body2">
-                  <span class="ventas-flex--num">1</span>
-                  <span class="ventas-flex--prod">Producto 1</span>
-                  <span class="ventas-flex--id">#PR-28473</span>
-                  <span class="ventas-flex--fecha">05/12/2024</span>
-                  <span class="ventas-flex--pago">TDC **23</span>
-                  <span class="ventas-flex--cliente">Marco Sanchez</span>
-                  <span class="ventas-flex--importe">$129.00</span>
+                  <span>1</span>
+                  <span>Producto 1</span>
+                  <span>#PR-28473</span>
+                  <span>05/12/2024</span>
+                  <span>TDC **23</span>
+                  <span>Marco Sanchez</span>
+                  <span>$129.00</span>
                 </div>
                 <div class="ventas-flex--row body2">
-                  <span class="ventas-flex--num">1</span>
-                  <span class="ventas-flex--prod">Producto 1</span>
-                  <span class="ventas-flex--id">#PR-28473</span>
-                  <span class="ventas-flex--fecha">05/12/2024</span>
-                  <span class="ventas-flex--pago">TDC **23</span>
-                  <span class="ventas-flex--cliente">Marco Sanchez</span>
-                  <span class="ventas-flex--importe">$129.00</span>
+                  <span>1</span>
+                  <span>Producto 1</span>
+                  <span>#PR-28473</span>
+                  <span>05/12/2024</span>
+                  <span>TDC **23</span>
+                  <span>Marco Sanchez</span>
+                  <span>$129.00</span>
                 </div>
                 <div class="ventas-flex--row body2">
-                  <span class="ventas-flex--num">1</span>
-                  <span class="ventas-flex--prod">Producto 1</span>
-                  <span class="ventas-flex--id">#PR-28473</span>
-                  <span class="ventas-flex--fecha">05/12/2024</span>
-                  <span class="ventas-flex--pago">TDC **23</span>
-                  <span class="ventas-flex--cliente">Marco Sanchez</span>
-                  <span class="ventas-flex--importe">$129.00</span>
+                  <span>1</span>
+                  <span>Producto 1</span>
+                  <span>#PR-28473</span>
+                  <span>05/12/2024</span>
+                  <span>TDC **23</span>
+                  <span>Marco Sanchez</span>
+                  <span>$129.00</span>
                 </div>
                 <div class="ventas-flex--row body2">
-                  <span class="ventas-flex--num">1</span>
-                  <span class="ventas-flex--prod">Producto 1</span>
-                  <span class="ventas-flex--id">#PR-28473</span>
-                  <span class="ventas-flex--fecha">05/12/2024</span>
-                  <span class="ventas-flex--pago">TDC **23</span>
-                  <span class="ventas-flex--cliente">Marco Sanchez</span>
-                  <span class="ventas-flex--importe">$129.00</span>
+                  <span>1</span>
+                  <span>Producto 1</span>
+                  <span>#PR-28473</span>
+                  <span>05/12/2024</span>
+                  <span>TDC **23</span>
+                  <span>Marco Sanchez</span>
+                  <span>$129.00</span>
                 </div>
                 <div class="ventas-flex--row body2">
-                  <span class="ventas-flex--num">1</span>
-                  <span class="ventas-flex--prod">Producto 1</span>
-                  <span class="ventas-flex--id">#PR-28473</span>
-                  <span class="ventas-flex--fecha">05/12/2024</span>
-                  <span class="ventas-flex--pago">TDC **23</span>
-                  <span class="ventas-flex--cliente">Marco Sanchez</span>
-                  <span class="ventas-flex--importe">$129.00</span>
+                  <span>1</span>
+                  <span>Producto 1</span>
+                  <span>#PR-28473</span>
+                  <span>05/12/2024</span>
+                  <span>TDC **23</span>
+                  <span>Marco Sanchez</span>
+                  <span>$129.00</span>
                 </div>
                 <div class="ventas-flex--footer">
                   <span class="body2"> 5/10 </span>
                   <div class="paginacion--botones">
                     <button class="button--outlined"><</button>
-                    <button class="button--outlined">1</button>
+                    <button class="button--primary button--primary__sm">
+                      1
+                    </button>
                     <button class="button--outlined">2</button>
                     <button class="button--outlined">...</button>
                     <button class="button--outlined">4</button>
@@ -270,5 +290,13 @@
         </main>
       </div>
     </div>
+    <script>
+      var data = {
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago'],
+        series: [[1200, 2203, 2341, 12562, 10235, 7896, 9104, 7652]],
+      }
+
+      new Chartist.Line('.ct-chart', data)
+    </script>
   </body>
 </html>

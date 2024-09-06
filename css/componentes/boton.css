@@ -5,7 +5,6 @@
   border: none;
   border-radius: 8px;
   padding: 16px 24px;
-  margin-bottom: 16px;
   transition: all 0.25s;
 
   &:hover {
@@ -16,6 +15,10 @@
   &:active {
     background-color: var(--button-primary-pressed);
   }
+}
+
+.button--primary__sm {
+  padding: 8px 16px;
 }
 
 .button--secondary {
